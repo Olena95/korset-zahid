@@ -50,7 +50,7 @@ const Appointment = () => {
                 </span>
                 <div className="card-body p-0 content">
                   <h5>Години роботи</h5>
-                  <p className="mb-0">Понеділок - П'ятниця</p>
+                  <p className="mb-0">Понеділок - П&apos;ятниця</p>
                   <p className="para text-muted">9:00 - 16:00</p>
                 </div>
               </div>

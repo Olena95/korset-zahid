@@ -49,7 +49,7 @@ const ReviewsSlider = ({ reviews }) => {
                             />
                             <div className="flex-1 content p-3 shadow rounded bg-white position-relative">
                               <p className="text-muted mt-2">
-                                " {review.desc} "
+                                &quot; {review.desc} &quot;
                               </p>
                               <h6 className="text-primary">
                                 - {review.name}{" "}
@@ -77,7 +77,7 @@ const ReviewsSlider = ({ reviews }) => {
                             />
                             <div className="flex-1 content p-3 shadow rounded bg-white position-relative">
                               <p className="text-muted mt-2">
-                                " {review.desc} "
+                                &quot; {review.desc} &quot;
                               </p>
                               <h6 className="text-primary">
                                 - {review.name}{" "}

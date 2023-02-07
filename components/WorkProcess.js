@@ -36,8 +36,8 @@ const WorkProcess = () => {
               <Card.Body>
                 <h5 className="text-dark">Зустріч з пацієнтом</h5>
                 <p className="text-muted mb-0">
-                  The most well-known dummy text is the 'Lorem Ipsum', which is
-                  said to have originated
+                  The most well-known dummy text is the &apos;Lorem Ipsum&apos;,
+                  which is said to have originated
                 </p>
               </Card.Body>
             </Card>

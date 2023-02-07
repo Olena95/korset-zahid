@@ -120,9 +120,9 @@ const Services = () => {
                     <h5>Діагностика</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Читати більше
@@ -150,9 +150,9 @@ const Services = () => {
                     <h5>Лікування</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Читати більше
@@ -180,9 +180,9 @@ const Services = () => {
                     <h5>Виготовлення</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Читати більше
@@ -210,9 +210,9 @@ const Services = () => {
                     <h5>Консультація</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Читати більше
@@ -240,9 +240,9 @@ const Services = () => {
                     <h5>Medicine Services</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Learn More{" "}
@@ -270,9 +270,9 @@ const Services = () => {
                     <h5>Orthopadic Service</h5>
                     <p className="text-muted my-3">
                       This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as 'fill text'. It
-                      is said that song composers of the past used dummy texts
-                      as lyrics.
+                      yet available. Dummy text is also known as &apos;fill
+                      text&apos;. It is said that song composers of the past
+                      used dummy texts as lyrics.
                     </p>
                     <Link href="#" className="text-primary">
                       Learn More{" "}

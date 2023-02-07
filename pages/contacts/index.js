@@ -26,7 +26,8 @@ const Contacts = () => {
                         <Form.Group>
                           <div className="mb-3">
                             <Form.Label className="form-label">
-                              Ваше ім'я <span className="text-danger">*</span>
+                              Ваше ім&apos;я{" "}
+                              <span className="text-danger">*</span>
                             </Form.Label>
                             <div className="form-icon position-relative">
                               <i>

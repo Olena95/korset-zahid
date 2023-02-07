@@ -92,7 +92,7 @@ const Methodology = () => {
                     за допомогою ременів (липучок).
                   </p>
                   <Link href="#" className="btn btn-primary mt-3">
-                    Зв'яжіться з нами
+                    Зв&apos;яжіться з нами
                   </Link>
                 </div>
               </div>
@@ -167,19 +167,20 @@ const Methodology = () => {
                     <div className="mt-4">
                       <p className="text-muted">
                         This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics. This is required when, for
-                        example, the final text is not yet available. Dummy text
-                        is also known as 'fill text'. It is said that song
-                        composers of the past used dummy texts as lyrics. This
-                        is required when, for example, the final text is not yet
-                        available. Dummy text is also known as 'fill text'. It
-                        is said that song composers of the past used dummy texts
-                        as lyrics. This is required when, for example, the final
+                        not yet available. Dummy text is also known as
+                        &apos;fill text&apos;. It is said that song composers of
+                        the past used dummy texts as lyrics. This is required
+                        when, for example, the final text is not yet available.
+                        Dummy text is also known as &apos;fill text&apos;. It is
+                        said that song composers of the past used dummy texts as
+                        lyrics. This is required when, for example, the final
                         text is not yet available. Dummy text is also known as
-                        'fill text'. It is said that song composers of the past
-                        used dummy texts as lyrics.
+                        &apos;fill text&apos;. It is said that song composers of
+                        the past used dummy texts as lyrics. This is required
+                        when, for example, the final text is not yet available.
+                        Dummy text is also known as &apos;fill text&apos;. It is
+                        said that song composers of the past used dummy texts as
+                        lyrics.
                       </p>
                     </div>
                   </TabPane>
@@ -197,19 +198,20 @@ const Methodology = () => {
                     <div className="mt-4">
                       <p className="text-muted">
                         This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics. This is required when, for
-                        example, the final text is not yet available. Dummy text
-                        is also known as 'fill text'. It is said that song
-                        composers of the past used dummy texts as lyrics. This
-                        is required when, for example, the final text is not yet
-                        available. Dummy text is also known as 'fill text'. It
-                        is said that song composers of the past used dummy texts
-                        as lyrics. This is required when, for example, the final
+                        not yet available. Dummy text is also known as
+                        &apos;fill text&apos;. It is said that song composers of
+                        the past used dummy texts as lyrics. This is required
+                        when, for example, the final text is not yet available.
+                        Dummy text is also known as &apos;fill text&apos;. It is
+                        said that song composers of the past used dummy texts as
+                        lyrics. This is required when, for example, the final
                         text is not yet available. Dummy text is also known as
-                        'fill text'. It is said that song composers of the past
-                        used dummy texts as lyrics.
+                        &apos;fill text&apos;. It is said that song composers of
+                        the past used dummy texts as lyrics. This is required
+                        when, for example, the final text is not yet available.
+                        Dummy text is also known as &apos;fill text&apos;. It is
+                        said that song composers of the past used dummy texts as
+                        lyrics.
                       </p>
                     </div>
                   </TabPane>
