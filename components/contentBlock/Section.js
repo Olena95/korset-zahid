@@ -36,8 +36,8 @@ const Section = () => {
               <div className="ms-lg-4">
                 <img
                   src="/images/x-ray-photo.jpg"
-                  style={{ height: 1600, width: 1800 }}
-                  className="img-fluid rounded"
+                  style={{ height: "auto", width: "100%" }}
+                  className="rounded img-fluid mx-auto d-block shadow rounded"
                   alt="1111"
                 />
               </div>
