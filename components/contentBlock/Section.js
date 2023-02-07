@@ -34,10 +34,9 @@ const Section = () => {
 
             <Col lg={7} md={7} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
               <div className="ms-lg-4">
-                <Image
+                <img
                   src="/images/x-ray-photo.jpg"
-                  width={1800}
-                  height={1600}
+                  style={{ height: 1600, width: 1800 }}
                   className="img-fluid rounded"
                   alt="1111"
                 />
