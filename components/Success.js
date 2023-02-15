@@ -27,19 +27,25 @@ const Success = () => {
   const studioProcessesData = [
     {
       id: 1,
-      title: "Discuss The Project",
+      title: "Сучасна професійна діагностика",
       desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
       link: "#",
     },
     {
       id: 2,
-      title: "Develop & Elaborate",
+      title: "Правильність призначення та конструкція виготовлення корсета",
       desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
       link: "#",
     },
     {
       id: 3,
-      title: "Final Approvement",
+      title: "Регулярні курси лікувальної гімнастики та масажу",
+      desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "Динамічне спостереження",
       desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
       link: "#",
     },

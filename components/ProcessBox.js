@@ -7,7 +7,7 @@ const ProcessBox = ({ processes }) => {
   return (
     <React.Fragment>
       {processes.map((process, key) => (
-        <Col md="4" className="mt-4 pt-2" key={key}>
+        <Col md="6" className="mt-4 pt-2" key={key}>
           <Card className="work-process border-0 rounded shadow">
             <Card.Body>
               <h4 className="title">{process.title}</h4>

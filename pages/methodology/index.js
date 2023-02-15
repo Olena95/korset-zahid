@@ -166,22 +166,44 @@ const Methodology = () => {
                     />
                     <div className="mt-4">
                       <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as
-                        &apos;fill text&apos;. It is said that song composers of
-                        the past used dummy texts as lyrics. This is required
-                        when, for example, the final text is not yet available.
-                        Dummy text is also known as &apos;fill text&apos;. It is
-                        said that song composers of the past used dummy texts as
-                        lyrics. This is required when, for example, the final
-                        text is not yet available. Dummy text is also known as
-                        &apos;fill text&apos;. It is said that song composers of
-                        the past used dummy texts as lyrics. This is required
-                        when, for example, the final text is not yet available.
-                        Dummy text is also known as &apos;fill text&apos;. It is
-                        said that song composers of the past used dummy texts as
-                        lyrics.
+                        Сколіо́з (англ. scoliosis, походить від грец. σκολιός —
+                        «викривлення») — захворювання опорно-рухового апарата,
+                        що характеризується викривленням хребта у фронтальній
+                        (боковій) площині з розворотом хребців (торсія) навколо
+                        своєї вертикальної осі. Процес формування сколіотичної
+                        деформації — це результат взаємодії чинників, що
+                        порушують вертикальне положення хребта, й
+                        пристосувальних реакцій, спрямованих на збереження
+                        вертикального положення.
                       </p>
+                      <p className="text-muted">
+                        Приблизно у 80 % усіх випадків причина виникнення
+                        викривлень невідома. Сколіоз може починатися в
+                        будь-якому віці. Найчастіше він зустрічається в період
+                        швидкого зростання — у віці від 6 до 24 місяців, 5 — 8
+                        років, 11 — 14 років життя. Зі збільшенням викривлення
+                        зростає тенденція до погіршення проблем загального стану
+                        здоров'я. Сильні сколіози є причиною деформації тулуба
+                        та його укорочення і призводять до зменшення об'єму
+                        грудної клітки і черевної порожнини.
+                      </p>
+                      <h5 className="text-muted">
+                        Покази для корсетотерапії при сколіозі
+                      </h5>
+                      <ol className="text-muted">
+                        <li>
+                          Прогресування деформації більш чим на 5° за 6 місяців
+                        </li>
+                        <li>
+                          Високий ризик прогресування:
+                          <ul>
+                            <li> діти та підлітки з тестом Ріссера 0-3</li>
+                            <li> величина деформації 20-40°</li>
+                            <li> торсія хребців більше 10°</li>
+                            <li> низький індекс стабільності</li>
+                          </ul>
+                        </li>
+                      </ol>
                     </div>
                   </TabPane>
 
@@ -197,22 +219,32 @@ const Methodology = () => {
                     />
                     <div className="mt-4">
                       <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as
-                        &apos;fill text&apos;. It is said that song composers of
-                        the past used dummy texts as lyrics. This is required
-                        when, for example, the final text is not yet available.
-                        Dummy text is also known as &apos;fill text&apos;. It is
-                        said that song composers of the past used dummy texts as
-                        lyrics. This is required when, for example, the final
-                        text is not yet available. Dummy text is also known as
-                        &apos;fill text&apos;. It is said that song composers of
-                        the past used dummy texts as lyrics. This is required
-                        when, for example, the final text is not yet available.
-                        Dummy text is also known as &apos;fill text&apos;. It is
-                        said that song composers of the past used dummy texts as
-                        lyrics.
+                        Кіфоз (дав.-гр. κύφος зігнутий, горбатий) — в загальних
+                        випадках являє собою викривлення верхнього відділу
+                        хребта. Може бути як надбаним, так і спадковим. Один з
+                        типів порушення постави людини; вигин назад у грудному
+                        відділі — грудний кіфоз
                       </p>
+                      <p className="text-muted">
+                        Кіфоз, що виникає в грудному відділі хребта, клінічно
+                        проявляється у вигляді синдрому «круглої спини»
+                        (сутулість; у складніших випадках — горбатість). При
+                        цьому положенні плечі пацієнта нахилені допереду і
+                        донизу, грудна клітка звужується. Основний дихальний
+                        м'яз — діафрагма опускається донизу, м'язи черевного
+                        преса ослаблені, верхня частина тулуба нахилена вперед.
+                      </p>
+                      <h5 className="text-muted">
+                        Покази для корсетотерапії при кіфозі
+                      </h5>
+
+                      <ul className="text-muted">
+                        <li> Грудний кіфоз більше 30° </li>
+                        <li> Грудо поперековий кіфоз</li>
+                        <li> Поперековий кіфоз </li>
+                        <li> Наявність больового синдрому</li>
+                        <li> Спондилолістез </li>
+                      </ul>
                     </div>
                   </TabPane>
                 </TabContent>

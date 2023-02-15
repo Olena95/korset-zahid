@@ -34,12 +34,19 @@ const Section = () => {
 
             <Col lg={7} md={7} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
               <div className="ms-lg-4">
-                <img
+                <Image
+                  src="/images/x-ray-photo.jpg"
+                  className="rounded img-fluid mx-auto d-block shadow rounded"
+                  alt="1111"
+                  width={1200}
+                  height={800}
+                />
+                {/* <img
                   src="/images/x-ray-photo.jpg"
                   style={{ height: "auto", width: "100%" }}
                   className="rounded img-fluid mx-auto d-block shadow rounded"
                   alt="1111"
-                />
+                /> */}
               </div>
             </Col>
           </Row>
