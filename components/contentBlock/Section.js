@@ -15,17 +15,17 @@ const Section = () => {
             <Col lg={5} md={5}>
               <div className="title-heading">
                 <h4 className="heading my-3">
-                  Ми подбаємо про вашу
-                  <span className="text-primary"> спину</span>
+                  Нашим дітям -
+                  <span className="text-primary"> здорові спини!</span>
                 </h4>
                 <p className="para-desc text-muted mb-0">
-                  Launch your campaign and benefit from our expertise on
-                  designing and managing conversion centered bootstrap v5 html
-                  page.
+                  Єдиним доведеним консервативним методом лікування сколіозу є
+                  носіння корсета Шено. Основна функція корсета - запобігання
+                  подальшому прогресуванню деформації хребта.
                 </p>
 
                 <div className="mt-3">
-                  <Link href="#" className="btn btn-primary me-2 mt-2">
+                  <Link href="/contacts" className="btn btn-primary me-2 mt-2">
                     Замовити консультацію
                   </Link>
                 </div>
@@ -41,12 +41,6 @@ const Section = () => {
                   width={1200}
                   height={800}
                 />
-                {/* <img
-                  src="/images/x-ray-photo.jpg"
-                  style={{ height: "auto", width: "100%" }}
-                  className="rounded img-fluid mx-auto d-block shadow rounded"
-                  alt="1111"
-                /> */}
               </div>
             </Col>
           </Row>

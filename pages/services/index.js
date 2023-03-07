@@ -99,7 +99,7 @@ const Services = () => {
       <section className="mb-5 d-flex align-items-center flex-column">
         <h3>Потрібна консультація?</h3>
         <div className="mt-4">
-          <Link href="#" className="btn btn-primary">
+          <Link href="/contacts" className="btn btn-primary">
             Записатися
           </Link>
         </div>

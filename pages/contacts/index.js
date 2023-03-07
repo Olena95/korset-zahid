@@ -1,11 +1,31 @@
 import React from "react";
 import Link from "next/link";
 import { Container, Row, Col, Form, Card } from "react-bootstrap";
-
+import { useState } from "react";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
+import { sendContactForm } from "../../lib/api";
 
 const Contacts = () => {
+  const [name, setName] = useState();
+  const [mail, setMail] = useState();
+  const [phone, setPhone] = useState();
+  const [message, setMessage] = useState();
+
+  const handleFormData = (e) => {
+    e.preventDefault();
+    const data = {
+      name,
+      mail,
+      phone,
+      message,
+    };
+    e.target.reset();
+    sendContactForm(data);
+
+    console.log(data);
+  };
+
   return (
     <>
       <section className="section pt-5 ">
@@ -20,7 +40,12 @@ const Contacts = () => {
               <Card className="custom-form rounded shadow border-0">
                 <Card.Body>
                   <h4 className="mb-4">Замовити консультацію</h4>
-                  <Form method="post" name="contact-form" id="contact-form">
+                  <Form
+                    method="post"
+                    name="contact-form"
+                    id="contact-form"
+                    onSubmit={handleFormData}
+                  >
                     <Row>
                       <Col lg={6}>
                         <Form.Group>
@@ -44,6 +69,7 @@ const Contacts = () => {
                               className="form-control ps-5"
                               placeholder="Ім'я:"
                               required
+                              onChange={(e) => setName(e.target.value)}
                             />
                           </div>
                         </Form.Group>
@@ -70,6 +96,34 @@ const Contacts = () => {
                               className="form-control ps-5"
                               placeholder="Email:"
                               required
+                              onChange={(e) => setMail(e.target.value)}
+                            />
+                          </div>
+                        </Form.Group>
+                      </Col>
+                      <Col lg={12}>
+                        <Form.Group>
+                          <div className="mb-3">
+                            <Form.Label className="form-label">
+                              Ваш номер телефону{" "}
+                              <span className="text-danger">*</span>
+                            </Form.Label>
+                            <div className="form-icon position-relative">
+                              <i>
+                                <FeatherIcon
+                                  icon="phone"
+                                  className="fea icon-sm icons"
+                                />
+                              </i>
+                            </div>
+                            <Form.Control
+                              name="phone"
+                              id="phone"
+                              type="phone"
+                              className="form-control ps-5"
+                              placeholder="+38 (000) 000 00 00"
+                              required
+                              onChange={(e) => setPhone(e.target.value)}
                             />
                           </div>
                         </Form.Group>
@@ -95,6 +149,7 @@ const Contacts = () => {
                               rows="4"
                               className="form-control ps-5"
                               placeholder="Повідомлення:"
+                              onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
                           </div>
                         </Form.Group>

@@ -157,7 +157,7 @@ const Footer = () => {
               <div className="col col-sm-6">
                 <div className="text-sm-start">
                   <p className="mb-0">
-                    © {new Date().getFullYear()} Landrick. Design with{" "}
+                    © {new Date().getFullYear()} KORSET-ZAHID. Design with{" "}
                     <i className="mdi mdi-heart text-danger"></i> by{" "}
                     <Link
                       href="https://themesbrand.in/"
@@ -165,7 +165,7 @@ const Footer = () => {
                       className="text-reset text-decoration-none"
                       rel="noopener noreferrer"
                     >
-                      Themesbrand
+                      WebLand
                     </Link>
                     .
                   </p>

@@ -91,7 +91,7 @@ const Methodology = () => {
                     потрібному напрямку в процесі корекції. Корсет застібається
                     за допомогою ременів (липучок).
                   </p>
-                  <Link href="#" className="btn btn-primary mt-3">
+                  <Link href="/contacts" className="btn btn-primary mt-3">
                     Зв&apos;яжіться з нами
                   </Link>
                 </div>

@@ -124,7 +124,7 @@ const Services = () => {
                       text&apos;. It is said that song composers of the past
                       used dummy texts as lyrics.
                     </p>
-                    <Link href="#" className="text-primary">
+                    <Link href="/services" className="text-primary">
                       Читати більше
                       <i>
                         <FeatherIcon
@@ -154,7 +154,7 @@ const Services = () => {
                       text&apos;. It is said that song composers of the past
                       used dummy texts as lyrics.
                     </p>
-                    <Link href="#" className="text-primary">
+                    <Link href="/services" className="text-primary">
                       Читати більше
                       <i>
                         <FeatherIcon
@@ -184,7 +184,7 @@ const Services = () => {
                       text&apos;. It is said that song composers of the past
                       used dummy texts as lyrics.
                     </p>
-                    <Link href="#" className="text-primary">
+                    <Link href="/services" className="text-primary">
                       Читати більше
                       <i>
                         <FeatherIcon
@@ -214,68 +214,8 @@ const Services = () => {
                       text&apos;. It is said that song composers of the past
                       used dummy texts as lyrics.
                     </p>
-                    <Link href="#" className="text-primary">
+                    <Link href="/services" className="text-primary">
                       Читати більше
-                      <i>
-                        <FeatherIcon
-                          icon="arrow-right"
-                          className="fea icon-sm"
-                        />{" "}
-                      </i>
-                    </Link>
-                  </div>
-                </TabPane>
-
-                <TabPane
-                  className="fade show bg-white p-4 rounded shadow"
-                  tabId="5"
-                  eventKey="five"
-                >
-                  <img
-                    src="/images/medical/medicine.jpg"
-                    className="img-fluid rounded shadow"
-                    alt=""
-                  />
-                  <div className="mt-4">
-                    <h5>Medicine Services</h5>
-                    <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
-                    </p>
-                    <Link href="#" className="text-primary">
-                      Learn More{" "}
-                      <i>
-                        <FeatherIcon
-                          icon="arrow-right"
-                          className="fea icon-sm"
-                        />{" "}
-                      </i>
-                    </Link>
-                  </div>
-                </TabPane>
-
-                <TabPane
-                  className="fade show bg-white p-4 rounded shadow"
-                  tabId="6"
-                  eventKey="six"
-                >
-                  <img
-                    src="/images/medical/orthopedic.jpg"
-                    className="img-fluid rounded shadow"
-                    alt=""
-                  />
-                  <div className="mt-4">
-                    <h5>Orthopadic Service</h5>
-                    <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
-                    </p>
-                    <Link href="#" className="text-primary">
-                      Learn More{" "}
                       <i>
                         <FeatherIcon
                           icon="arrow-right"
