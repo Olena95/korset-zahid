@@ -1,16 +1,28 @@
 import React from "react";
 import Link from "next/link";
-import { Container, Row, Col, Form, Card } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  Card,
+  Text,
+  Toast,
+  ToastContainer,
+} from "react-bootstrap";
 import { useState } from "react";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 import { sendContactForm } from "../../lib/api";
-
+const initState = { isLoading: false, error: "" };
 const Contacts = () => {
   const [name, setName] = useState();
   const [mail, setMail] = useState();
   const [phone, setPhone] = useState();
   const [message, setMessage] = useState();
+  const [success, setSuccess] = useState();
+  const [state, setState] = useState(initState);
+  const { values, isLoading, error } = state;
 
   const handleFormData = (e) => {
     e.preventDefault();
@@ -21,15 +33,47 @@ const Contacts = () => {
       message,
     };
     e.target.reset();
-    sendContactForm(data);
 
+    try {
+      sendContactForm(data);
+      setState(initState);
+      setSuccess(true);
+      console.log("sdsdds");
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
     console.log(data);
+  };
+
+  const closeToast = () => {
+    setSuccess(false);
   };
 
   return (
     <>
       <section className="section pt-5 ">
         <Container className="mt-100 mt-60">
+          {success && (
+            <ToastContainer className="p-3" position="top-center">
+              <Toast bg="info">
+                <Toast.Header
+                  closeButton={true}
+                  className="text-center"
+                  onClick={closeToast}
+                >
+                  <strong className="me-auto success">Відправлено!</strong>
+                </Toast.Header>
+                <Toast.Body className="text-center">
+                  Дякуємо за запит! Ми зв&apos;яжемося з вами найближчим часом!
+                </Toast.Body>
+              </Toast>
+            </ToastContainer>
+          )}
+
           <Row className="align-items-center">
             <Col
               lg={5}
@@ -40,6 +84,12 @@ const Contacts = () => {
               <Card className="custom-form rounded shadow border-0">
                 <Card.Body>
                   <h4 className="mb-4">Замовити консультацію</h4>
+                  {error && (
+                    <Text color="red.300" my={4} fontSize="xl">
+                      {error}
+                    </Text>
+                  )}
+
                   <Form
                     method="post"
                     name="contact-form"
@@ -195,7 +245,7 @@ const Contacts = () => {
                   <div className="flex-1 content">
                     <h6 className="title fw-bold mb-0">Email</h6>
                     <Link href="#" className="text-primary ">
-                      contact@example.com
+                      korset.zahid@gmail.com
                     </Link>
                   </div>
                 </div>
@@ -212,7 +262,7 @@ const Contacts = () => {
                   <div className="flex-1 content">
                     <h6 className="title fw-bold mb-0">Телефон</h6>
                     <Link href="#" className="text-primary ">
-                      +152 534-468-854
+                      +38 097 474 31 86
                     </Link>
                   </div>
                 </div>
@@ -228,8 +278,15 @@ const Contacts = () => {
                   </div>
                   <div className="flex-1 content">
                     <h6 className="title fw-bold mb-0">Адреса</h6>
-                    <Link href="#" className="video-play-icon  text-primary">
-                      View on Google map
+                    <div>
+                      вулиця Львівська, 2а, Бірки, Львівська область, 81092
+                    </div>
+                    <Link
+                      href="https://goo.gl/maps/7kXeZ5pmX8mhQfL98"
+                      className="video-play-icon  text-primary"
+                      target="_blank"
+                    >
+                      Переглянути в Google картах
                     </Link>
                   </div>
                 </div>

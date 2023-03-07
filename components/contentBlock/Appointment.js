@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   Card,
   CardBody,
@@ -13,10 +13,11 @@ import {
   Row,
   FormFeedback,
 } from "react-bootstrap";
+import Link from "next/link";
 
 const Appointment = () => {
   const [modal, setModal] = useState(false);
-
+  const router = useRouter();
   return (
     <>
       <section className="section bg-light">
@@ -73,17 +74,24 @@ const Appointment = () => {
             </Col>
 
             <Col lg={4} md={4} xs={12} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-              <Card className="features fea-primary rounded p-4 bg-white position-relative overflow-hidden border-0">
-                <span className="h1 icon2 text-primary">
-                  <i className="uil uil-map-marker"></i>
-                </span>
-                <Card.Body className="p-0 content">
-                  <h5>Знайти на карті</h5>
-                  <p className="para text-muted mb-0">
-                    Натисніть, щоб побачити наше розташування на карті
-                  </p>
-                </Card.Body>
-              </Card>
+              <Link
+                href="https://goo.gl/maps/7kXeZ5pmX8mhQfL98"
+                target="_blank"
+              >
+                {" "}
+                <Card className="features fea-primary rounded p-4 bg-white position-relative overflow-hidden border-0">
+                  <span className="h1 icon2 text-primary">
+                    <i className="uil uil-map-marker"></i>
+                  </span>
+
+                  <Card.Body className="p-0 content">
+                    <h5>Знайти на карті</h5>
+                    <p className="para text-muted mb-0">
+                      Натисніть, щоб побачити наше розташування на карті
+                    </p>
+                  </Card.Body>
+                </Card>
+              </Link>
             </Col>
           </Row>
         </Container>

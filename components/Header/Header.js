@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const router = useRouter();
 
+  // useEffect(() => {
+  //   if (isMenuOpen) {
+  //     setMenuOpen(!isMenuOpen);
+  //   }
+  // }, [router.asPath]);
   console.log(router);
   return (
     <div className="container-fluid">

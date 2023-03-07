@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Footer = () => {
   const [isBorderLine, setIsBorderLine] = useState();
   const [isLight, setIsLight] = useState(false);
+
   const data = {
     grid1: [
-      { title: "Про нас", link: "#" },
-      { title: "Методологі", link: "#" },
-      { title: "Послуги", link: "#" },
-      { title: "Контакти", link: "#" },
+      { title: "Годовна", link: "/" },
+      { title: "Методологі", link: "/methodology" },
+      { title: "Послуги", link: "/services" },
+      { title: "Контакти", link: "/contacts" },
     ],
     // grid2: [
     //   { title: "Terms of Services", link: "#" },
@@ -36,7 +38,7 @@ const Footer = () => {
                       Start working with Landrick that can provide everything
                       you need to generate awareness, drive traffic, connect.
                     </p>
-                    <ul
+                    {/* <ul
                       className={
                         isLight
                           ? "list-unstyled social-icon social mb-0 m t-4"
@@ -87,7 +89,7 @@ const Footer = () => {
                           />
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <div className="col-12 col-lg-4 col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">

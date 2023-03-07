@@ -1,11 +1,24 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const MobileMenu = () => {
   const router = useRouter();
+  const [isMenuOpen, setMenuOpen] = useState();
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setMenuOpen(!isMenuOpen);
+    }
+  }, [router.asPath]);
+
   return (
     <div className="menuToggle ">
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        onChange={(e) => setMenuOpen(e.target.checked)}
+        checked={isMenuOpen}
+      />
 
       <span className="burger-icon"></span>
       <span className="burger-icon"></span>
