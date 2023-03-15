@@ -36,8 +36,7 @@ const WorkProcess = () => {
               <Card.Body>
                 <h5 className="text-dark">Зустріч з пацієнтом</h5>
                 <p className="text-muted mb-0">
-                  The most well-known dummy text is the &apos;Lorem Ipsum&apos;,
-                  which is said to have originated
+                  Зустріч відбувається на конкретно домовлену годину.
                 </p>
               </Card.Body>
             </Card>
@@ -60,8 +59,8 @@ const WorkProcess = () => {
               <Card.Body>
                 <h5 className="text-dark">Зняття замірів</h5>
                 <p className="text-muted mb-0">
-                  Generators convallis odio, vel pharetra quam malesuada vel.
-                  Nam porttitor malesuada.
+                  Заміри ми отримуємо за результатами рентгена, 3D-сканування
+                  тіла пацієнта або індивідуальним гіпсовим зліпком.
                 </p>
               </Card.Body>
             </Card>
@@ -84,8 +83,8 @@ const WorkProcess = () => {
               <Card.Body>
                 <h5 className="text-dark">Виготвлення корсету</h5>
                 <p className="text-muted mb-0">
-                  Internet Proin tempus odio, vel pharetra quam malesuada vel.
-                  Nam porttitor malesuada.
+                  Виготовляємо його лише за індивідуальним замовленям із
+                  термопластичних матеріалів
                 </p>
               </Card.Body>
             </Card>

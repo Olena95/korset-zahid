@@ -26,10 +26,9 @@ const Services = () => {
             <div className="section-title text-center text-md-start">
               <h4 className="title mb-4">Наші послуги</h4>
               <p className="text-muted mb-0 para-desc">
-                Start working with{" "}
-                <span className="text-primary fw-bold">Landrick</span> that can
-                provide everything you need to generate awareness, drive
-                traffic, connect.
+                Тут ви знайдете короткий опис напиш послуг. Для отримання більше
+                детальної інформації щодо послуг, які необхідні саме вам,
+                потрібно зв&apos;язатися з нашими консультантами.
               </p>
             </div>
           </Col>
@@ -112,17 +111,18 @@ const Services = () => {
                   eventKey="first"
                 >
                   <img
-                    src="/images/medical/dental.jpg"
+                    src="/images/x-ray-photo.jpg"
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
                     <h5>Діагностика</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
+                      З багаторічного досвіду можемо сказати, що здебільшого
+                      пацієнти звертаються до нас після хірургічного обстеження
+                      з готовим направленням на корсет Шено. Далі беруться до
+                      роботи наші фахівці: проводять сканування тіла за
+                      допомогою 3D-сканера...
                     </p>
                     <Link href="/services" className="text-primary">
                       Читати більше
@@ -142,17 +142,16 @@ const Services = () => {
                   eventKey="second"
                 >
                   <img
-                    src="/images/medical/cardio.jpg"
+                    src="/images/doctor.jpg"
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
                     <h5>Лікування</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
+                      Сьогодні основними факторами успіху консервативного
+                      лікування сколіозу є: вчасна діагностика, правильність
+                      призначення та конструкція виготовлення корсета...
                     </p>
                     <Link href="/services" className="text-primary">
                       Читати більше
@@ -172,17 +171,16 @@ const Services = () => {
                   eventKey="third"
                 >
                   <img
-                    src="/images/medical/eyecare.jpg"
+                    src="/images/company/about2.jpg"
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
                     <h5>Виготовлення</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
+                      Ми виготовляємо корсет Шено у Львові лише за
+                      індивідуальним замовленням із термопластичних
+                      матеріалів...
                     </p>
                     <Link href="/services" className="text-primary">
                       Читати більше
@@ -202,17 +200,16 @@ const Services = () => {
                   eventKey="four"
                 >
                   <img
-                    src="/images/medical/general.jpg"
+                    src="/images/doctor2.jpg"
                     className="img-fluid rounded shadow"
                     alt=""
                   />
                   <div className="mt-4">
                     <h5>Консультація</h5>
                     <p className="text-muted my-3">
-                      This is required when, for example, the final text is not
-                      yet available. Dummy text is also known as &apos;fill
-                      text&apos;. It is said that song composers of the past
-                      used dummy texts as lyrics.
+                      Пацієнт обов&apos;язково повинен мати при собі рентген
+                      знімки у прямій та боковій проекціях. Наші фахівці
+                      методом...
                     </p>
                     <Link href="/services" className="text-primary">
                       Читати більше

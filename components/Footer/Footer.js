@@ -9,8 +9,8 @@ const Footer = () => {
 
   const data = {
     grid1: [
-      { title: "Годовна", link: "/" },
-      { title: "Методологі", link: "/methodology" },
+      { title: "Головна", link: "/" },
+      { title: "Методології", link: "/methodology" },
       { title: "Послуги", link: "/services" },
       { title: "Контакти", link: "/contacts" },
     ],

@@ -9,27 +9,27 @@ const Services = () => {
   const blogs = [
     {
       id: 1,
-      image: "/images/work/13.jpg",
+      image: "/images/x-ray-photo.jpg",
       title: "Діагностика",
-      desc: "Due to its widespread use as filler text for layouts, non-readability",
+      desc: "З багаторічного досвіду можемо сказати,  що здебільшого пацієнти звертаються до нас після хірургічного обстеження з готовим направленням на корсет Шено. Далі беруться до роботи наші фахівці: проводять сканування тіла за допомогою 3D-сканера та, використовуючи спеціальне програмне забезпечення створюють 3D-модель майбутнього корсета. Готовий корсет остаточно підганяється ортезистами під пацієнта. Для отримання позитивної динаміки ми рекомендуємо пацієнту додаткові заходи:  лікувальну фізкультуру, масаж  і наступні консультації з корекцію або заміною корсету, опираючись на ріст та фізіологічні зміни.",
     },
     {
       id: 2,
-      image: "/images/work/14.jpg",
+      image: "/images/doctor.jpg",
       title: "Лікування",
-      desc: "Due to its widespread use as filler text for layouts, non-readability",
+      desc: "Сьогодні основними факторами успіху консервативного лікування сколіозу є: вчасна діагностика, правильність призначення та конструкція виготовлення корсета,  регулярні  курси лікувальної гімнастики та масажу, динамічне спостереження. Після 1,5 - 2 місяці з початку носіння корсета пацієнт має зробити контрольний рентген знімок та приїхати до нас на можливе коригування. Далі пацієнт перебуває під наглядом у свого лікуючого лікаря до наступної заміни корсета приблизно  6-12 місяців.",
     },
     {
       id: 3,
-      image: "/images/work/15.jpg",
+      image: "/images/company/about2.jpg",
       title: "Виготовлення",
-      desc: "Due to its widespread use as filler text for layouts, non-readability",
+      desc: "Ми виготовляємо корсет Шено у Львові лише за індивідуальним  замовленням із термопластичних матеріалів за результатами рентгена, 3D-сканування тіла пацієнта або індивідуальним гіпсовим зліпком. Орієнтовне виготовлення корсета триває від 1 до 3 тижнів, а при необхідності 1-2 дні. Примірка-видача корсетика - 40 хв",
     },
     {
       id: 4,
-      image: "/images/work/16.jpg",
+      image: "/images/doctor2.jpg",
       title: "Консультація",
-      desc: "Due to its widespread use as filler text for layouts, non-readability",
+      desc: "Пацієнт обов'язково повинен мати при собі рентген знімки у прямій та боковій проекціях. Наші  фахівці методом 3D сканування знімуть заміри, (тривалість 30-60 секунд). Записатись на консультацію можна за телефоном або залишити заявку на сайті і наш менеджер зконтактує з вами.",
     },
   ];
 
@@ -56,10 +56,10 @@ const Services = () => {
         <Container>
           <Row>
             {blogs.map((blog, key) => (
-              <Col lg={6} xs={12} key={key} className="mb-4 pb-2">
+              <Col lg={12} xs={12} key={key} className="mb-4 pb-2">
                 <Card className="blog rounded border-0 shadow overflow-hidden">
                   <Row className="align-items-center g-0">
-                    <Col md={6}>
+                    <Col md={4}>
                       <img
                         src={blog.image}
                         className="img-fluid"
@@ -76,10 +76,13 @@ const Services = () => {
                       </div>
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={8}>
                       <Card.Body className="content">
-                        <h5>
-                          <Link href="#" className="card-title title text-dark">
+                        <h5 className="text-center">
+                          <Link
+                            href="#"
+                            className="card-title title text-dark "
+                          >
                             {blog.title}
                           </Link>
                         </h5>

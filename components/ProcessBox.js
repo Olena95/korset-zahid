@@ -14,7 +14,7 @@ const ProcessBox = ({ processes }) => {
               <p className="text-muted para">{process.desc}</p>
 
               <ul className="list-unstyled d-flex justify-content-between mb-0 mt-2">
-                <li className="step h1 mb-0 fw-bold">Крок {key + 1}.</li>
+                <li className="step h1 mb-0 fw-bold">Фактор {key + 1}.</li>
                 <li className="step-icon">
                   <i
                     className={

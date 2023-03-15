@@ -28,25 +28,24 @@ const Success = () => {
     {
       id: 1,
       title: "Сучасна професійна діагностика",
-      desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
       link: "#",
     },
     {
       id: 2,
-      title: "Правильність призначення та конструкція виготовлення корсета",
-      desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+      title: "Динамічне спостереження",
+
       link: "#",
     },
     {
       id: 3,
-      title: "Регулярні курси лікувальної гімнастики та масажу",
-      desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+      title: "Правильність призначення та конструкція виготовлення корсета",
+
       link: "#",
     },
     {
       id: 4,
-      title: "Динамічне спостереження",
-      desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+      title: "Регулярні курси лікувальної гімнастики та масажу",
+
       link: "#",
     },
   ];
@@ -66,10 +65,8 @@ const Success = () => {
               <div className="section-title mb-4 pb-2">
                 <h4 className="title mb-4">Фактори успіху</h4>
                 <p className="text-muted para-desc mx-auto mb-0">
-                  Start working with{" "}
-                  <span className="text-primary fw-bold">Landrick</span> that
-                  can provide everything you need to generate awareness, drive
-                  traffic, connect.
+                  Дотримування цих простих правил є обов&apos;язковим для
+                  отримання гарантованого результату
                 </p>
               </div>
             </Col>
