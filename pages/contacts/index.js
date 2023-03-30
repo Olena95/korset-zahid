@@ -244,9 +244,12 @@ const Contacts = () => {
                   </div>
                   <div className="flex-1 content">
                     <h6 className="title fw-bold mb-0">Email</h6>
-                    <Link href="#" className="text-primary ">
+                    <a
+                      href={`mailto:korset.zahid@gmail.com`}
+                      className="text-primary "
+                    >
                       korset.zahid@gmail.com
-                    </Link>
+                    </a>
                   </div>
                 </div>
 
@@ -261,9 +264,25 @@ const Contacts = () => {
                   </div>
                   <div className="flex-1 content">
                     <h6 className="title fw-bold mb-0">Телефон</h6>
-                    <Link href="#" className="text-primary ">
+
+                    <a href={`tel:+38 097 474 31 86`} className="text-primary ">
                       +38 097 474 31 86
-                    </Link>
+                    </a>
+                  </div>
+                </div>
+                <div className="d-flex contact-detail align-items-center mt-3">
+                  <div className="icon">
+                    <i>
+                      <FeatherIcon
+                        icon="phone"
+                        className="fea icon-m-md text-dark me-3"
+                      />
+                    </i>
+                  </div>
+                  <div className="flex-1 content">
+                    <a href={`tel:+380 98 813 26 52`} className="text-primary ">
+                      +380 98 813 26 52
+                    </a>
                   </div>
                 </div>
 
