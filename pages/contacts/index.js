@@ -228,10 +228,9 @@ const Contacts = () => {
               <div className="title-heading ms-lg-4">
                 <h4 className="mb-4">Контактна інформація</h4>
                 <p className="text-muted">
-                  Start working with{" "}
-                  <span className="text-primary fw-bold">Landrick</span> that
-                  can provide everything you need to generate awareness, drive
-                  traffic, connect.
+                  Якщо бажаєте залишити відгук або ж записатись на консультацію
+                  чи лікування заповніть форму і наш менеджер зконтактує з вами.
+                  Або телефонуйте за динними номерами з 9:00 - 20:00
                 </p>
                 <div className="d-flex contact-detail align-items-center mt-3">
                   <div className="icon">

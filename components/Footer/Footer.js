@@ -35,8 +35,8 @@ const Footer = () => {
                   <div className="col-12 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
                     <Link href="#" className="logo-footer"></Link>
                     <p className={isLight ? "mt-4 text-muted" : "mt-4"}>
-                      Start working with Landrick that can provide everything
-                      you need to generate awareness, drive traffic, connect.
+                      Вчасна діагностика та правильне лікування - є головним
+                      успіхом на шляху до здорової спини.
                     </p>
                     {/* <ul
                       className={
@@ -162,7 +162,7 @@ const Footer = () => {
                     © {new Date().getFullYear()} KORSET-ZAHID. Design with{" "}
                     <i className="mdi mdi-heart text-danger"></i> by{" "}
                     <Link
-                      href="https://themesbrand.in/"
+                      href="https://webland.com/"
                       target="_blank"
                       className="text-reset text-decoration-none"
                       rel="noopener noreferrer"
