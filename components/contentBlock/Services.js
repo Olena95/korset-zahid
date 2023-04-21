@@ -171,7 +171,7 @@ const Services = () => {
                   eventKey="third"
                 >
                   <img
-                    src="/images/company/about2.jpg"
+                    src="/images/company/about3.jpg"
                     className="img-fluid rounded shadow"
                     alt=""
                   />
