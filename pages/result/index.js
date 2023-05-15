@@ -59,7 +59,7 @@ const AllCases = () => {
                   Результати лікування
                 </h4>
                 <p className="text-white-50 para-desc mb-0 mx-auto">
-                  Щоб отримати такі результати, потрібна час і витримка! Ми
+                  Щоб отримати такі результати, потрібнен час і витримка! Ми
                   пишаємо нашими пацієнтами та ділимось з вами їхніми
                   результатими!
                 </p>
@@ -110,7 +110,7 @@ const AllCases = () => {
                           {cases.title}
                         </Link>
                       </h5>
-                      <p className="text-muted">Діагнос: {cases.diagnosis}</p>
+                      <p className="text-muted">Діагноз: {cases.diagnosis}</p>
                       <p className="text-muted">{cases.desc}</p>
                       <Link href="#" className="text-primary link h6">
                         Записатись на консультацію
