@@ -83,7 +83,7 @@ const Contacts = () => {
             >
               <Card className="custom-form rounded shadow border-0">
                 <Card.Body>
-                  <h4 className="mb-4">Замовити консультацію</h4>
+                  <h4 className="mb-4">Напишіть нам!</h4>
                   {error && (
                     <Text color="red.300" my={4} fontSize="xl">
                       {error}

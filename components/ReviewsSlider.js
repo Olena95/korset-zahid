@@ -6,18 +6,18 @@ const ReviewsSlider = ({ reviews }) => {
   const [step1, setStep1] = useState(true);
   const [step2, setStep2] = useState(false);
 
-  const updateWindowSize = () => {
-    if (window.outerWidth >= 1230) {
-      setCols({ itemCount: 2, cols: 6 });
-    } else if (window.outerWidth >= 970 && window.outerWidth < 1230) {
-      setCols({ itemCount: 2, cols: 6 });
-    } else if (window.outerWidth <= 970) {
-      setCols({ itemCount: 1, cols: 12 });
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("resize", updateWindowSize);
-  }, []);
+  // const updateWindowSize = () => {
+  //   if (window.outerWidth >= 1230) {
+  //     setCols({ itemCount: 2, cols: 6 });
+  //   } else if (window.outerWidth >= 970 && window.outerWidth < 1230) {
+  //     setCols({ itemCount: 2, cols: 12 });
+  //   } else if (window.outerWidth <= 970) {
+  //     setCols({ itemCount: 2, cols: 12 });
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("resize", updateWindowSize);
+  // }, []);
 
   return (
     <React.Fragment>
@@ -29,7 +29,7 @@ const ReviewsSlider = ({ reviews }) => {
                 {step1 === true
                   ? reviews.map((review, key) =>
                       key >= 0 && key <= 1 ? (
-                        <Col key={key} md={cols} className="mb-1">
+                        <Col key={key} lg={6} md={12} className="mb-4">
                           <div
                             className="d-flex client-testi"
                             name="clientsreview"
@@ -46,7 +46,7 @@ const ReviewsSlider = ({ reviews }) => {
                     )
                   : reviews.map((review, key) =>
                       key >= 2 && key <= 5 ? (
-                        <Col key={key} md={cols} className="mb-1">
+                        <Col key={key} lg={6} md={12} className="mb-4">
                           <div
                             className="d-flex client-testi"
                             name="clientsreview"

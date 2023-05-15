@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
+import Link from "next/link";
 //Import Components
 import AboutUs from "../components/contentBlock/AboutUs";
 import Appointment from "../components/contentBlock/Appointment";
@@ -55,6 +56,13 @@ const Index = () => {
 
           {/* clients slider */}
           <ReviewsSlider reviews={reviews} colClass="mt-5" className="mt-100" />
+          <section className="mb-5 d-flex align-items-center flex-column">
+            <div className="mt-4">
+              <Link href="/contacts" className="btn btn-primary">
+                Написати коментар
+              </Link>
+            </div>
+          </section>
         </Container>
       </section>
 
