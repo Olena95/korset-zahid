@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, CardBody } from "react-bootstrap";
 import Link from "next/link";
-//Fade in effect
-import FadeIn from "react-fade-in";
 
 const AllCases = () => {
   const works = [
@@ -96,33 +94,31 @@ const AllCases = () => {
                 xs={12}
                 className="mt-4 pt-2 business"
               >
-                <FadeIn delay={100}>
-                  <Card className="blog border-0 work-container work-primary work-classic shadow rounded-md overflow-hidden">
-                    <img
-                      src={cases.image}
-                      className="img-fluid work-image"
-                      alt="Landrick"
-                    />
-                    <Card.Body>
-                      <div className="content">
-                        <h5 className="mt-3">
-                          <Link
-                            href="page-case-detail"
-                            className="text-dark title"
-                          >
-                            {cases.title}
-                          </Link>
-                        </h5>
-                        <p className="text-muted">Діагнос: {cases.diagnosis}</p>
-                        <p className="text-muted">{cases.desc}</p>
-                        <Link href="#" className="text-primary link h6">
-                          Записатись на консультацію
-                          <i className="uil uil-angle-right-b align-middle"></i>
+                <Card className="blog border-0 work-container work-primary work-classic shadow rounded-md overflow-hidden">
+                  <img
+                    src={cases.image}
+                    className="img-fluid work-image"
+                    alt="Landrick"
+                  />
+                  <Card.Body>
+                    <div className="content">
+                      <h5 className="mt-3">
+                        <Link
+                          href="page-case-detail"
+                          className="text-dark title"
+                        >
+                          {cases.title}
                         </Link>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </FadeIn>
+                      </h5>
+                      <p className="text-muted">Діагнос: {cases.diagnosis}</p>
+                      <p className="text-muted">{cases.desc}</p>
+                      <Link href="#" className="text-primary link h6">
+                        Записатись на консультацію
+                        <i className="uil uil-angle-right-b align-middle"></i>
+                      </Link>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
             ))}
           </Row>
