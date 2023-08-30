@@ -4,21 +4,8 @@ import { SSRProvider } from "react-bootstrap";
 import "../styles/global.scss";
 import Head from "next/head";
 import Script from "next/script";
-import * as gtag from "../lib/gtag";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-    const router = useRouter();
-    useEffect(() => {
-        const handleRouteChange = (url) => {
-            gtag.pageview(url);
-        };
-        router.events.on("routeChangeComplete", handleRouteChange);
-        return () => {
-            router.events.off("routeChangeComplete", handleRouteChange);
-        };
-    }, [router.events]);
     return (
         <SSRProvider>
             <Head>
@@ -30,23 +17,17 @@ export default function App({ Component, pageProps }) {
                 />
             </Head>
             <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-YJG4PLMY31"
                 strategy="afterInteractive"
-                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
             />
-            <Script
-                id="google-analytics"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-                }}
-            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJG4PLMY31');`}
+            </Script>
             <Header />
             <Component {...pageProps} />
             <Footer />
