@@ -17,23 +17,17 @@ export default function App({ Component, pageProps }) {
                 />
             </Head>
             <Script
-                async
                 src="https://www.googletagmanager.com/gtag/js?id=G-YJG4PLMY31"
-            ></Script>
-            <Script
-                id="1"
-                dangerouslySetInnerHTML={{
-                    __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', '${gtag.GA_TRACKING_ID}', {
-                page_path: window.location.pathname,
-              });
-            `,
-                }}
+                strategy="afterInteractive"
             />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJG4PLMY31');`}
+            </Script>
             <Header />
             <Component {...pageProps} />
             <Footer />
