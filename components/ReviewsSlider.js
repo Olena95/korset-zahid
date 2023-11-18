@@ -12,13 +12,11 @@ const ReviewsSlider = ({ reviews }) => {
         dots: true,
         infinite: true,
         speed: 500,
-        // centerMode: true,
-        // centerPadding: "30",
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 1220,
                 settings: {
                     slidesToShow: 1,
                     arrows: false, // Встановіть стрілки в false, щоб вони зникали
@@ -36,20 +34,27 @@ const ReviewsSlider = ({ reviews }) => {
                             <Row>
                                 <Slider {...settings}>
                                     {reviews.map((review) => (
-                                        <div
+                                        <Col
                                             key={review.id}
-                                            className="d-flex client-testi justify-content-center"
-                                            name="clientsreview"
+                                            lg={3}
+                                            md={12}
+                                            className="mb-4"
                                         >
-                                            <div className="flex-1 content p-3 m-4 shadow rounded bg-white position-relative">
-                                                <p className="text-muted mt-2">
-                                                    &quot; {review.desc} &quot;
-                                                </p>
-                                                <h6 className="text-primary">
-                                                    - {review.name}{" "}
-                                                </h6>
+                                            <div
+                                                className="d-flex justify-content-center  client-testi"
+                                                name="clientsreview"
+                                            >
+                                                <div className="flex-1 content p-3 m-4 shadow rounded bg-white position-relative">
+                                                    <p className="text-muted mt-2">
+                                                        &quot; {review.desc}{" "}
+                                                        &quot;
+                                                    </p>
+                                                    <h6 className="text-primary">
+                                                        - {review.name}{" "}
+                                                    </h6>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Col>
                                     ))}
                                 </Slider>
                             </Row>
