@@ -17,6 +17,14 @@
         display: none;
       }
    }
+   &__menu-icons{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: none;
+    }
+   }
    &__menuBurger {
 
     @media (min-width: 769px) {
