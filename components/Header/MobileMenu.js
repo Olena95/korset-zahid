@@ -11,6 +11,8 @@ const MobileMenu = () => {
             setMenuOpen(!isMenuOpen);
         }
     }, [router.asPath]);
+    const instagram =
+        "https://www.instagram.com/korset_zakhid_lviv?igsh=MTUxemNuZzFveWdhbQ==";
     const viberGroup =
         "https://invite.viber.com/?g2=AQBTNn249om6Vk%2BnMl71CgzcLPXBYNOJX7FHdkkZ2OGx5dMKkJlX5leFyOm2Hx6p";
     return (
@@ -44,6 +46,16 @@ const MobileMenu = () => {
                     <li>
                         <Image
                             src="/images/icons/viber.png"
+                            width={32}
+                            height={32}
+                            alt="viber"
+                        />
+                    </li>
+                </Link>
+                <Link href={instagram} target="_blank">
+                    <li>
+                        <Image
+                            src="/images/icons/instagram.png"
                             width={32}
                             height={32}
                             alt="viber"
