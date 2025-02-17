@@ -37,7 +37,6 @@ const Contacts = () => {
             sendContactForm(data);
             setState(initState);
             setSuccess(true);
-            console.log("sdsdds");
         } catch (error) {
             setState((prev) => ({
                 ...prev,
@@ -45,7 +44,6 @@ const Contacts = () => {
                 error: error.message,
             }));
         }
-        console.log(data);
     };
 
     const closeToast = () => {
@@ -351,11 +349,10 @@ const Contacts = () => {
                                             Адреса
                                         </h6>
                                         <div>
-                                            вулиця Львівська, 2а, Бірки,
-                                            Львівська область, 81092
+                                        вулиця Незалежності, 33, Брюховичі, Львівська область, 79491
                                         </div>
                                         <Link
-                                            href="https://goo.gl/maps/7kXeZ5pmX8mhQfL98"
+                                            href="https://g.co/kgs/387yutt"
                                             className="video-play-icon  text-primary"
                                             target="_blank"
                                         >

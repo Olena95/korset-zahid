@@ -23,10 +23,10 @@ const generateEmailContent = (data) => {
 };
 
 const handler = async (req, res) => {
-  console.log();
+
   if (req.method === "POST") {
     const data = req.body;
-    console.log(data);
+
     if (!data || !data.name || !data.mail || !data.phone || !data.message) {
       return res.status(400).send({ message: "Bad request" });
     }
@@ -40,7 +40,6 @@ const handler = async (req, res) => {
 
       return res.status(200).json({ success: true });
     } catch (err) {
-      console.log(err);
       return res.status(400).json({ message: err.message });
     }
   }
