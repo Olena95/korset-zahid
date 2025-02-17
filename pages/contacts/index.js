@@ -352,7 +352,7 @@ const Contacts = () => {
                                         вулиця Незалежності, 33, Брюховичі, Львівська область, 79491
                                         </div>
                                         <Link
-                                            href="https://g.co/kgs/387yutt"
+                                            href="https://goo.gl/maps/7kXeZ5pmX8mhQfL98"
                                             className="video-play-icon  text-primary"
                                             target="_blank"
                                         >
