@@ -316,24 +316,7 @@ const Contacts = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="d-flex contact-detail align-items-center mt-3">
-                                    <div className="icon">
-                                        <i>
-                                            <FeatherIcon
-                                                icon="phone"
-                                                className="fea icon-m-md text-dark me-3"
-                                            />
-                                        </i>
-                                    </div>
-                                    <div className="flex-1 content">
-                                        <a
-                                            href={`tel:+380 98 813 26 52`}
-                                            className="text-primary "
-                                        >
-                                            +380 98 813 26 52
-                                        </a>
-                                    </div>
-                                </div>
+                
 
                                 <div className="d-flex contact-detail align-items-center mt-3">
                                     <div className="icon">
